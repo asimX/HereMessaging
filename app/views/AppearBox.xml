@@ -1,0 +1,27 @@
+<Alloy>
+	  
+	   <Window id ="AppearBox">
+	   	<View id="thisStatusContentView" layout="vertical">
+	   		<!-- 
+	   		<Label id="addr1" class="loc" text="street" />
+	   		<Label id="addr2" class="loc" text= "city"/>
+	   		<Label id="addr3" class="loc" text="Around"/>
+	     -->	
+	<!--	<Label id="headingLbl" text="Access Your Account"/> -->
+	
+	    	<!--<View id="StatusUpdateContainer">-->
+		
+		<!--		<TextArea id="statusMsg" /> 
+				<Label id="chars" />-->
+			<!--	<View backgroundColor="#b4b4b3" height="1dp"/>
+				<TextField hintText="conform_pass" color = "#ebebeb" passwordMask="true" id="c_pwdTxt"> -->
+			  	
+			<!--</View>-->
+		<!--	<Button title = "SEND" width = "55dp" right="5dp" top="45dp" height="45dp" color="black" backgroundImage="/images/sendBtn2.png" id="StatusUpdateBtn" />-->
+		<Button id="closePopUp" bottom="5dp" > CLOSE </Button>
+		</View> 
+	   
+	   </Window>
+	
+	
+</Alloy>

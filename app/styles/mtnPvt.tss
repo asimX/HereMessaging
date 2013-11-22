@@ -1,0 +1,47 @@
+"#mtnPvt": {
+	// "backgroundColor":"#fff",
+	 //"layout":'vertical',
+	//barImage:"images/btn-settings@2x.png",
+	//barColor:"#202020",
+	
+	 ///layout: "vertical"
+		//: 1,
+     ///	visible: false,
+},
+
+
+"#mHeaderNav2" : {
+	"top":5,
+	"right":0,
+	"image":"/images/privatesIcon.png",
+	"width":80,"height":70,
+	
+   },
+
+"#mHeaderNav1" : {
+	"top":0,
+	"left":5,      
+	"image":"/images/mentios2SelectedIcon.png",
+   },
+   
+ 
+/*
+"#helloBtn" : {
+	"top":5,
+    "width":250,
+    "height":30,
+   
+},
+"#callXhr" : {
+	"top":5,
+    "width":250,
+    "height":30
+},
+
+"#table":{
+     bottom:40,
+     "height":100,	
+	
+},
+*/
+

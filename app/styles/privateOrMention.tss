@@ -1,0 +1,56 @@
+"#privateOrMention": {
+	top:5,
+	title: "HERE",
+	height:'90dp',
+	
+	//barImage:"images/btn-settings@2x.png",
+	//barColor:"#202020",
+	 "backgroundColor":"#797979",
+	 ///layout: "vertical"
+		//: 1,
+     ///	visible: false,
+},
+
+
+"#privateIcon" : {
+	"top":0,
+	"left":0,
+	"image":"/images/privatesIcon.png",
+   },
+
+"#mention" : {
+	"top":5,
+	"right":0,      
+	"image":"/images/mentios2SelectedIcon.png",
+   },
+   
+".PM":{
+    top:0,
+    height:'90dp',
+    backgroundImage:"/images/btn-settings@2x.png",
+},  
+   
+ 
+/*
+"#helloBtn" : {
+	"top":5,
+    "width":250,
+    "height":30,
+   
+},
+"#callXhr" : {
+	"top":5,
+    "width":250,
+    "height":30
+},
+
+"#table":{
+     bottom:40,
+     "height":100,	
+	
+},
+*/
+
+
+
+

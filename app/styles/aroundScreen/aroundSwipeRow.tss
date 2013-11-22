@@ -1,0 +1,113 @@
+// ".cube":{
+//  
+ 	// //image:"/images/pro.jpg",
+ 	// width:50,
+ 	// height:50,
+ 	// borderRadius:5,
+ 	// //borderColor:"#000000",
+ 	// //borderWidth:1,
+ 	// },
+//  
+ // ".strip":{
+ 	// top:0,
+ 	// layout:"horizontal",
+    // height:'80dp',
+    // width:"100%",
+    // "backgroundColor":"#797979",
+ // },
+//  
+ // ".innerRow":{
+ 	// backgroundColor:"#ebebeb",
+ // },
+ 
+"#aroundtvRow":{
+	height: "80dp",
+	backgroundColor: "#ebebeb",
+	layout: "horizontal"
+},
+
+"#iconContainer":{
+	
+},
+"#aroundIcon":{
+	image: "/images/aroundScreen/tabbar-around.png",
+	width: "40dp",
+	height: "40dp"
+},
+
+"#rowCenterView": {
+	height: Ti.UI.FILL,
+	backgroundColor: "#ebebeb",
+	//layout: "vertical"
+},
+
+"#rowRightView":{
+	//width: "50dp",
+	//layout: "vertical",
+	backgroundColor: "#ebebeb",
+	height: Ti.UI.FILL
+},
+
+"#appearancesLbl":{
+	top: "3dp",
+	font: {
+		fontSize: "10dp"
+	},
+	color: "#444444"
+},
+
+"#numOfAppearances":{
+	//top: "10dp",
+	font: {
+		fontFamily: 'GillSans-Light',
+		fontSize: "30dp"
+	}
+},
+
+"#placeLbl": {
+	font:{
+		fontFamily: 'GillSans-Light',
+		fontSize: "25dp",
+		//width: Ti.UI.FILL,
+	},
+	width: Ti.UI.SIZE,
+	//height: Ti.UI.SIZE,
+	//editable: false,
+	//wordWrap: false,
+	//horizontalWrap: false,
+	//ellipsize: true,
+	backgroundColor: "#ebebeb",
+	textAlign: "left",
+	left: 0,
+	//minimumFontSize: "18dp"
+	
+},
+
+"#placeLblContainer":{
+	//showHorizontalScrollIndicator: false,
+	//showVerticalScrollIndicator: false,
+	//height: Ti.UI.SIZE,
+	//contentWidth: 'auto',
+	//width: Ti.UI.SIZE,
+	top: 0,
+	height: "62dp",
+	horizontalWrap: false,
+	left:0
+},
+
+"#roadImg":{
+	image: "/images/aroundScreen/road.png",
+	height: Ti.UI.FILL,
+	width: "20dp"
+},
+"#distanceLbl":{
+	width: Ti.UI.FILL,
+	left: "3dp",
+	color: "#a8a8a8"
+},
+"#innerView":{
+	height:"18dp",
+	layout:"horizontal",
+	bottom: "3dp",
+	//backgroundColor: "blue"
+}

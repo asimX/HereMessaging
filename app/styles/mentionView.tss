@@ -1,0 +1,35 @@
+
+
+"#mentionTxt":{
+	width:210
+	
+	
+},
+
+ 
+/*
+"#helloBtn" : {
+	"top":5,
+    "width":250,
+    "height":30,
+   
+},
+"#callXhr" : {
+	"top":5,
+    "width":250,
+    "height":30
+},
+
+"#table":{
+     bottom:40,
+     "height":100,	
+	
+},
+*/
+
+"#mentionView":{
+	
+	top:1
+	
+	
+},

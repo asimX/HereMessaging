@@ -1,0 +1,24 @@
+<Alloy>
+	<HeaderPullView platform="ios">
+		<View id="ptr" class="ptr">
+			<ImageView id="avatar"/>
+	        <View id="prtCenter" class="ptrCenter">
+	            <Label id="title"/>
+	            <Label id="ptrText" class="ptrText" />
+	            <Label id="location" class="ptrText" textAlign="Ti.UI.TEXT_ALIGNMENT_RIGHT" right="5dp" />
+	        </View>
+	        <ImageView id="ptrArrow" class="ptrArrow" />
+	    </View>
+	</HeaderPullView>
+	<!-- <HeaderView platform="android" height="80dp">
+		<View id="ptr" class="ptr">
+			<ImageView id="avatar"/>
+	        <View id="prtCenter" class="ptrCenter">
+	            <Label id="title"/>
+	            <Label id="ptrText" class="ptrText" />
+	            <Label id="location" class="ptrText" textAlign="Ti.UI.TEXT_ALIGNMENT_RIGHT" right="5dp" />
+	        </View>
+	        <ImageView id="ptrArrow" class="ptrArrow" />
+	    </View>
+	</HeaderView> -->
+</Alloy>

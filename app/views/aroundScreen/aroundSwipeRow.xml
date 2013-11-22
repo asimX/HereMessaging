@@ -1,0 +1,22 @@
+ <Alloy>
+ 	
+	<TableViewRow id="aroundtvRow">
+		<View id="iconContainer">
+			<ImageView id="aroundIcon"/>
+		</View>
+		<View id="rowCenterView">
+			<View id="placeLblContainer">
+				<Label id="placeLbl">this is a place</Label>
+			</View>		
+			<View id="innerView">
+				<ImageView id="roadImg"></ImageView>
+				<Label id="distanceLbl">4.5</Label>
+			</View>	
+		</View>				
+		<View id="rowRightView">
+			<Label id="appearancesLbl">Appearances</Label>
+			<Label id="numOfAppearances">55</Label>
+		</View>
+	</TableViewRow>
+			
+</Alloy>

@@ -1,0 +1,19 @@
+<Alloy>
+	
+		<View id="mtnPvt">
+			
+	         <View class ="headerNavBar">
+					         	
+					     <ImageView id="mHeaderNav1" class ="tabButtonSelected"/>	
+					     <ImageView id="mHeaderNav2"/>	
+					         
+	         </View>
+	         
+	         <!-- here the private and mentions view will be shown -->
+	         
+	
+			 
+		</View>
+		
+</Alloy>
+      

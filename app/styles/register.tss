@@ -1,0 +1,45 @@
+
+"#registerWin": {
+	backgroundColor:"#202020",
+	layout: "vertical"
+},
+
+"#registerContainer":{
+	backgroundColor:'#c0c0c0',
+	//left:"5%",
+	//right:"10dp",
+	width: "280dp",
+	height:"200dp",
+	top:"10dp",
+	bottom:"10dp",
+	layout:'vertical',
+	borderRadius: "8dp",
+	borderColor: "#b4b4b3"
+},
+
+// "TextField": {
+	// //height: 20,
+	// //width: Ti.UI.FILL,
+	// //backgroundColor: 'transparent',
+	// font: {fontSize: "16dp"}
+// },
+// "TextField[platform=android]":{
+	// //height: 40,
+	// //font: {fontSize: "50dp"}
+// }
+".middleView":{
+	top:"80dp",
+	backgroundColor: "transparent",
+	height: "15%"
+},
+".imgViewContainer":{
+	// top: "10dp",
+	backgroundColor: "transparent",
+	///height:100,
+	width: 200,
+	borderRadius: "8dp"
+},
+".logoImgView":{
+	image: "/images/logoGray.png",
+	width:200
+},

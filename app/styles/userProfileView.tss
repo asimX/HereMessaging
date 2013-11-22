@@ -1,0 +1,60 @@
+"#profileView":{
+ "backgroundColor":"#fff",	
+    top:0,
+    height:200,
+},
+
+"#profileImg":{
+
+//image:"/images/pro.jpg",
+    width:50,
+    height:50,
+    borderRadius:5,
+    borderColor:"#000000",
+    borderWidth:1,
+	
+	
+},
+"#unameLbl":{
+ "backgroundColor":"#cecece",
+	"borderRadius":5,
+	
+},
+"#emailLbl":{
+	
+	color:"#797979",	
+	"backgroundColor":"#cecece","borderRadius":5,
+},
+"#passLbl":{
+	"backgroundColor":"#cecece",
+	 color:"#797979","borderRadius":5,
+}
+
+"#locationLbl":{
+	
+	"backgroundColor":"#000",
+	 color:"#fbb14e",
+	"borderRadius":5,
+},
+"#uploadLbl":{
+	
+	"backgroundColor":"#cecece",
+	"borderRadius":5,
+},
+
+
+
+".bold":{
+	
+	font:{fontWeight:'bold',
+             size:13},
+    
+	},
+	
+".thin":{
+	
+	//"backgroundColor":"#cecece",	
+	"borderRadius":5,
+	"height":20,
+	
+       },

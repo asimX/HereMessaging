@@ -1,0 +1,17 @@
+"#wrapper": {
+	//backgroundColor: '#ebebeb'
+	//bottom: "0dp"
+},
+"#tabBar": {
+	//top: Ti.Platform.displayCaps.platformHeight*.8,
+	//width: Ti.UI.SIZE,
+	//height: Ti.Platform.displayCaps.platformHeight*.2,
+	layout:"horizontal"
+},
+"#tabView": {
+	//width: Ti.Platform.displayCaps.platformWidth,
+	//height: Ti.Platform.displayCaps.platformHeight*.8,
+	backgroundColor: "#000000"
+	//left: "0dp",
+	
+}

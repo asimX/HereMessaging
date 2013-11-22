@@ -1,0 +1,48 @@
+
+".deleteImage":{
+    image:"/images/delete.png",
+ 	width:20,
+ 	height:20,
+ 	borderRadius:5,
+ 	//borderColor:"#000000",
+ 	borderWidth:1,
+ 	
+},
+
+"#statusView":{
+	
+	"top":0,
+ 	"layout":"horizontal",
+    ///"height":'90',
+    //"width":"100%",
+   
+    "backgroundColor":"#797979",
+   
+},
+
+"#nameLbl":{
+	top:"0", 
+	//size:"16",
+   // width:"60",
+   "height":20,
+    color :"#797979",
+    left:"20",
+    font:{fontWeight:'bold',
+             size:13},
+	
+},
+
+".bold":{
+	
+	font:{fontWeight:'bold',
+             size:13},
+    
+	},
+	
+".thin":{
+	
+	//"backgroundColor":"#cecece",	
+	"borderRadius":5,
+	"height":20,
+	
+       },

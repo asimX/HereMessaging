@@ -1,0 +1,42 @@
+"#pvt": {
+	//"title":"HERE",
+	top:70,
+    backgroundColor :"#797979",
+	//layout: "vertical",
+},
+
+"#pHeaderNav2" : {
+	"top":5,
+	"right":0,
+	"image":"/images/mentionsIcon.png",
+   },
+
+"#pHeaderNav1" : {
+	"top":5,
+	"left":5,      
+	"image":"/images/mentios2SelectedIcon.png",
+   },
+   
+ 
+/*
+"#helloBtn" : {
+	"top":5,
+    "width":250,
+    "height":30,
+   
+},
+"#callXhr" : {
+	"top":5,
+    "width":250,
+    "height":30
+},
+
+"#table":{
+     bottom:40,
+     "height":100,	
+	
+},
+*/
+
+
+

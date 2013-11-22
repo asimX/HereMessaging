@@ -1,0 +1,12 @@
+"#avatar": {
+	//width: "75dp",
+	height: Ti.UI.FILL,
+	image: "/images/pro.png"
+},
+
+"#rowCenter": {
+	//bottom: 10, 
+	height: Ti.UI.FILL,
+	backgroundColor:"#ebebeb",
+	layout: "vertical"
+}

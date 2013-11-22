@@ -1,0 +1,10 @@
+<Alloy>
+	<TableViewRow id="homeRow" class="row" >
+		<ImageView id="avatar"/>
+        <View id="rowCenter">
+            <Label id="title"/>
+            <Label id="ptrText" class="ptrText" />
+            <Label id="location" class="ptrText" textAlign="Ti.UI.TEXT_ALIGNMENT_RIGHT" right="5dp" />
+        </View>
+	</TableViewRow>
+</Alloy>

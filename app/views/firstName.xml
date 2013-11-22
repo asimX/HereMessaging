@@ -1,0 +1,20 @@
+<Alloy>
+	  
+	   <Window id ="statusUpdate">
+	   	
+	   	<View id="thisStatusContentView">
+	
+				<TextArea id="statusMsg" /> 
+				<Label id="alrt" />
+		
+			<Button title = "SEND" width = "55dp" right="5dp" top="30dp" height="45dp" color="black" backgroundImage="/images/sendBtn2.png" id="StatusUpdateBtn" />
+			<Label id="dlabel" />
+		</View> 
+	   	
+	   <ImageView id ="closePopUp" bottom = "5dp" >
+	   		<Label id="cont" />
+	   	
+	   </Window>
+	
+	
+</Alloy>

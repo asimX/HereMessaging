@@ -1,0 +1,50 @@
+
+<Alloy>
+	 <!--> <View id="switchView" layout ="vertical"> 
+	    <View id="accordian" height = "30"><ImageView id="accordianbtn" image="images/hidden.png" width="20" height="20"/> </View>
+         -->    
+              <View class="row" top ="1" id="switchView" >	   
+				
+				<View layout ="vertical" class ="innerViewRowOne" left="0" width ="auto" >
+				
+					<!--Changed the code and add switch-->
+					
+				      <View height="25" top="2" >
+				      	
+						      <Label class="bold" color ="#797979" left ="5"> Alert to appear when enter new location </Label>
+						      <Switch class="Swtch" id="alertSwitch" value="true" right="0"/>
+				      
+				       </View>
+				       
+				         <View height="25" top="5" >
+				      	
+						      <Label class="bold" color ="#797979" left ="5"> Notify when new mention </Label>
+						      <Switch class="Swtch" id="mentionSwitch" value="true" right="0"/>
+				      
+				       </View>
+						
+						 <View height="25" top="5" >
+				      	
+						      <Label class="bold" color ="#797979" left ="5"> Notify when new private </Label>
+						      <Switch  class="Swtch" id="privateSwitch" value="true" right="0"/>
+				      
+				        </View>		
+				        
+				        
+				        <View height="50" top="5" >
+				      	
+						       <Button title ="Logout" width="100dp" height="50dp"   id ="logout" backgroundImage="/images/orangeBtnBG.png"/> 
+				      
+				        </View>				       
+			
+	            </View>
+	          
+	            
+	            		
+	  </View>		
+	
+	  		
+	
+	
+	
+</Alloy>

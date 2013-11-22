@@ -1,0 +1,60 @@
+"#win1": {
+	//title: "HERE",
+	//barImage:"images/btn-settings@2x.png",
+	//barColor:"#202020",
+	//backgroundColor:"#797979"
+	//layout: "vertical"
+},
+
+"#navBtn" : {
+	//top:5,
+	right:"5dp",
+	image:"/images/hereScreen/navbar-post.png",
+	bottom: "5dp"
+	//backgroundColor: "yellow"
+   },
+
+"#headerImg" : {
+	//top:5,
+	left:"5dp",      
+	image:"/images/hereScreen/navbar-herelogo.png"
+	//backgroundColor: "blue"
+	//width: Ti.UI.SIZE
+},
+".headerNavBar":{	
+	//top:"20dp",
+    //height:"65dp",
+    backgroundColor: "#202020"
+    //backgroundImage:"/images/btn-settings@2x.png"
+},
+"#homeTV":{
+	//height: "200dp"
+}
+   
+ 
+ 
+   
+/*
+"#helloBtn" : {
+	"top":5,
+    "width":250,
+    "height":30,
+   
+},
+"#callXhr" : {
+	"top":5,
+    "width":250,
+    "height":30
+},
+
+"#table":{
+     bottom:40,
+     "height":100,	
+	
+},
+*/
+
+
+
+
+

@@ -1,0 +1,58 @@
+".container": {
+	backgroundColor: "white",
+	layout:"vertical",
+},
+".headerNavBar":{
+	
+	top:"0dp",
+    //height:"65dp",
+    backgroundColor: "#202020"
+    //backgroundImage:"/images/btn-settings@2x.png"
+},
+"#headerImg" : {
+	//top:5,
+	left:"5dp",      
+	image:"/images/hereScreen/navbar-herelogo.png"
+	//backgroundColor: "blue"
+	//width: Ti.UI.SIZE
+},
+"#aroundTV" :{
+	rowHeight: "80dp"
+}
+// ".cube":{
+//  
+ 	// width:50,
+ 	// height:50,
+ 	// borderRadius:5,
+//  
+ 	// },
+//  
+ // ".strip":{
+ 	// top:0,
+ 	// layout:"horizontal",
+    // height:'80dp',
+    // width:"100%",
+    // "backgroundColor":"#797979",
+ // },
+//  
+ // ".innerRow":{
+ 	// backgroundColor:"#ebebeb",
+ // },
+// 
+// ".sv":{
+    // top:'0',
+    // layout:'vertical',
+    // contentHeight : 'auto',
+    // scrolshowVerticalScrollIndicator:true,
+    // scrollsToTop:true,
+//     
+// }
+
+// "#headerImg" : {
+	// //top:5,
+	// left:0,      
+	// image:"/images/logoGray.png"
+	// //backgroundColor: "blue"
+	// //width: Ti.UI.SIZE
+// }
+   

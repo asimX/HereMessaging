@@ -1,0 +1,39 @@
+<Alloy>
+	
+	<View class="row" id = "currentUserRow" top="0dp">
+					
+		<View class ="avatar"  left ="0" width ="90dp" >
+				<!-- <Label id="userName" class="bold" top="5"  left ="5"/> -->
+				<ImageView class="profilePic" id="pic"/>
+				<!--<Label id="userName" class="bold"  top="5"  right ="15" />
+				<Label class="thin" top="30"  right ="5">Mentions</Label>
+				<Label class="bold" id= "totalMention" bottom="5" right ="15" />-->	
+														
+		</View>
+								
+		<!--<Require type="view" src="rowContent"/>
+			
+								<!--<View id="appearBoxRow" class ="innerViewRowOne" left ="1" width ="65" >
+											
+											<Label class="thin" top="5"  >Appears</Label>
+											<Label class="bold" bottom="5" id="appears" />		
+													
+								</View>
+										
+								<View class ="innerViewRowOne" left = "1" width = "65" >
+								
+											<Label class="thin" top="5" >Location</Label>
+											<Label class="bold" bottom="5" id="location" />		
+											
+								</View>
+								
+								<View id=""  class ="innerViewRowOne" left = "1" width = "60" >
+										
+										  <ImageView id="refreshBtn" top ="0" right ="25" image="/images/arrowIcon.png" width = "30" height ="40"/>
+										  <Label class="thin" bottom="0"  right ="5" text="Click refresh" />
+											
+								
+								</View>-->
+									
+</View>
+</Alloy>

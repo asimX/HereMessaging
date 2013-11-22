@@ -1,0 +1,18 @@
+<Alloy>
+	<!--first row stats-->	
+	<View class="row"  id="mentionView" >
+					   
+			<View id="mRow" class ="innerViewRowOne" left="0">
+					
+					<ImageView id="profileImg" class="profilePic" left ="5"/>
+					<Label  id ="fname"  class ="bold" top="0"  width ="60" color ="#797979" left ="5"/>
+					<Label  id ="distance" class ="bold" top ="0" color ="#797979"  right ="0" />
+				    <Label  id ="mentionTxt" class ="thin" top="10" color ="#000000"  />
+				    <Label  id ="loc" class ="bold" bottom ="0"  color ="#797979" right ="0" />		
+				
+				</View>
+			
+					
+	</View>
+
+</Alloy>

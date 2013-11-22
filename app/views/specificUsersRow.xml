@@ -1,0 +1,31 @@
+<Alloy>
+	    			
+					<!--third row starts -->
+					
+				<View class="row" id="specificUsersRow" top="1">
+					<View class="row" id="sUserRow">
+							
+						<View class ="innerViewRowOne" left ="0" width ="127"   >
+								
+								<ImageView id="profileImg" class="profilePic" left ="5"/>
+								<Label class="bold"  > ~ </Label>
+								<ImageView id="toImage" class="profilePic" right ="5"/>
+								<Label id="fromUser" class = "bold" bottom ="0" width ="60"  left ="0" />
+								<Label id="toUser" class = "bold" bottom ="0" right ="5" />	
+								
+						</View>
+				
+						<View class ="innerViewRowOne"  left="1"  >
+						
+								  <Label id="duration" class="bold" top ="0" color ="#797979"  right ="0"/>
+								  <Label  id="mention" class="thin" top ="10" color ="#000000" left="5" />
+								  <Label id="loc" class="bold" bottom ="0"  color ="#797979" right ="0"/>
+													
+						</View>
+						
+						
+						</View>
+							
+				</View>  
+			
+</Alloy>

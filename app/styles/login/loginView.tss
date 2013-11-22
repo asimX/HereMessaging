@@ -1,0 +1,30 @@
+// "#loginContainer":{
+	// backgroundColor:'#202020',
+	// ///left:"5%",
+	// //right:"10dp",
+	// width: Ti.UI.FILL,
+	// height:Ti.UI.SIZE,
+	// top:"0dp",
+	// bottom:"10dp",
+	// layout:'vertical'
+// },
+
+"#loginHeader":{
+	image: "/images/loginScreen/loginHeader.png",
+	width: Ti.UI.FILL
+},
+
+// ".lineView":{
+	// height: "1dp",
+	// backgroundColor: "#272727"
+// },
+// 
+// ".tfLine":{
+	// backgroundColor: "#3e3e3e"
+// },
+
+".fields":{
+	height: "30dp",
+	font: {fontFamily: 'GillSans-Light', fontSize: "27dp"},
+	returnKeyType: Titanium.UI.RETURNKEY_DONE
+}

@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="wrapper">
+		<View id="tabView"/>
+		<View id="tabBar"/>
+	</View>
+</Alloy>

@@ -1,0 +1,21 @@
+".cube":{
+ 
+ 	//image:"/images/pro.jpg",
+ 	width:50,
+ 	height:50,
+ 	borderRadius:5,
+ 	//borderColor:"#000000",
+ 	//borderWidth:1,
+ 	},
+ 
+ ".strip":{
+ 	top:0,
+ 	layout:"horizontal",
+    height:'80dp',
+    width:"100%",
+    "backgroundColor":"#797979",
+ },
+ 
+ ".innerRow":{
+ 	backgroundColor:"#ebebeb",
+ },

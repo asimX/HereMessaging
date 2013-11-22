@@ -1,0 +1,19 @@
+"#parentRow": {
+	left: "0dp",
+	layout: "vertical"
+},
+"#headerInnerRow": {
+	top:"0dp",
+	height: "20%",
+	backgroundColor: "transparent"
+},
+"#bodyInnerRow": {
+	top:"0dp",
+	height: "50%",
+	backgroundColor: "transparent"
+},
+"#footerInnerRow": {
+	top: "0dp",
+	height: "15%",
+	backgroundColor: "red"
+}

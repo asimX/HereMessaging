@@ -1,0 +1,19 @@
+<Alloy>
+	  
+	   <Window id ="statusUpdate">
+	   	
+	   	<View id="thisStatusContentView">
+	
+				<TextField id="upass" passwordMask="true" /> 
+				<TextField id="c_pwdTxt" passwordMask="true" /> 
+				
+			<Button title = "SEND" width = "55dp" right="5dp" top="5dp" height="45dp" color="black" backgroundImage="/images/sendBtn2.png" id="StatusUpdateBtn" />
+			
+		</View> 
+	   <Button id ="closePopUp" title="Close" bottom = "5dp" />
+	   	
+	   	
+	   </Window>
+	
+	
+</Alloy>

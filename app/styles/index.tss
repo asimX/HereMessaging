@@ -1,8 +1,40 @@
 ".container": {
-	backgroundColor:"white"
+	backgroundColor:"#202020"
+	///layout: "vertical"
+},
+
+".container[platform=android]":{
+	backgroundColor: "#202020",
+	navBarHidden: true
+},
+
+"#middleView":{
+	bottom:"30%",
+	backgroundColor: "transparent",
+	height: "15%"
+},
+"#imgViewContainer":{
+	// top: "10dp",
+	backgroundColor: "transparent",
+	///height:100,
+	width: 200,
+	borderRadius: "8dp"
 },
 "Label": {
-	width: Ti.UI.SIZE,
+	//width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
-	color: "#000"
-} 
+	color: "#000",
+	top:10,
+	width:180
+}
+
+/*
+".tabGroup":{
+	
+	"bottom":0,
+    //"width":250,
+    "height":70,
+     ///"layout":"horizontal",
+    "backgroundImage":"/images/btn-settings@2x.png",
+	
+},*/

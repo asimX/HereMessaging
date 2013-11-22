@@ -1,0 +1,24 @@
+
+<Alloy>
+	  <View id = "profileView">
+				
+			<ImageView class="" id="profileImg" left ="5" top ="5"/>
+			
+			<View id = "leftView" layout = "vertical" top="0" right="0">
+			              
+			                        <Label class="bold" id="unameLbl" right ="5" top ="5" />
+			                        <Label class="bold" id="emailLbl"  right ="5"  top ="5" />
+			                        <Label class="bold" id="passLbl"  right ="5"  top ="5" >Tap to Edit Password</Label>	
+			                        <Label class="bold" id="locationLbl"  right ="5"  top ="5" >N/A</Label>	
+			                        
+		    </View>		
+			
+			<!-- <Label class="bold" id ="uploadLbl" left= "5" top ="">upload</Label> -->
+			
+			
+      </View>	
+         
+	
+	
+	
+</Alloy>

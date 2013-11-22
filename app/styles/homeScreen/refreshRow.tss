@@ -1,0 +1,58 @@
+"#avatar": {
+	//width: "75dp",
+	height: Ti.UI.FILL,
+	image: "/images/pro.png"
+},
+
+".ptr": {
+	layout: "horizontal",
+	height: "80dp",
+	backgroundColor: "#ebebeb"
+}
+
+".ptrCenter": {
+	//bottom: 10, 
+	height: Ti.UI.FILL,
+	backgroundColor:"#ebebeb",
+	layout: "vertical"
+}
+
+".ptrArrow": {
+	//right: "0dp",
+	width: "12dp", height: "60dp",
+	zIndex: 5,
+	backgroundColor: "#ebebeb",
+	
+    image: '/images/hereScreen/ptrArrow.png'
+}
+
+".ptrIndicator": {
+	left: 0,
+    
+    style: Ti.UI.ActivityIndicatorStyle.DARK
+}
+
+".ptrIndicator[platform=ios]": {
+	style: Ti.UI.iPhone.ActivityIndicatorStyle.DARK
+}
+
+".ptrText": {
+    //left: 30,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: '#535353',
+    font: {
+    	fontSize: "11dp",
+    	//fontWeight: 'bold'
+    },
+    wordWrap: true
+},
+
+"#title":{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#535353",
+	font:{
+		fontSize: "20p",
+		fontWeight: "bold",
+		fontFamily: "GillSans"
+	}
+}

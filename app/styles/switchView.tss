@@ -1,0 +1,23 @@
+
+"#accordian":{
+	"backgroundColor":"#fff",
+	backgroundGradient:{type:'linear',
+	//colors:['#ca1427','#810004'],
+	colors:['#cecece','#797979'],
+	startPoint:{x:0,y:0},
+	endPoint:{x:0,y:"32dp"},
+	backFillStart:false},
+	//borderWidth:1,
+	
+},
+
+"#accordianbtn":{
+	///backgroundColor:"transparent",
+	},
+
+".Swtch":{
+	
+	borderRadius:2,
+	
+	
+}

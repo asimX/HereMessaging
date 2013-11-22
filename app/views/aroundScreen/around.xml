@@ -1,0 +1,38 @@
+<Alloy>
+	
+	<View class="container"  >
+		
+		<View class ="headerNavBar" id="header">
+				         	
+	         <ImageView id="headerImg"/>	
+
+		</View>
+		<TableView id="aroundTV"/>
+		
+		<!-- <ScrollView id="scroller" class ="sv" showVerticalScrollIndicator="true" width="100%">
+		
+						  <View class="strip" id = "" top="1">
+							 			
+								<View class ="innerRow"  left ="0" width="240dp"  >
+										<Label id="around" class="bold"  top="5"  >Around</Label>
+										<ImageView class="cube"  id="cube1" image="/images/aroundScreen/singleDotBox.png" left ="5"/>
+										
+																			
+								</View>
+								 							
+								<View id=""  class ="innerRow" left = "1" width = "78dp" >
+																
+								      <ImageView id="suggest" top ="0" right ="20" image="/images/arrowIcon.png" width = "30" height ="40"/>
+									  <Label class="thin" bottom="0"  right ="5" text="Drag to see" />
+																	
+														
+							    </View>
+														
+					       </View>	
+							
+							
+		
+		</ScrollView> -->
+		
+	</View>
+</Alloy>

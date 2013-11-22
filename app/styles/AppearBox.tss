@@ -1,0 +1,58 @@
+"#AppearBox":{
+	backgroundColor :'#202020',
+	//borderWidth :8,
+	//borderColor :'#999',
+	//backgroundImage: 
+	//height:300,
+	//width :200,
+	//borderRadius:5,
+	///opacity:0.95,
+		
+},
+"#AppearBox[platform=android]":{
+	
+	 opacity: 1,
+     zIndex: 100,
+     layout:'vertical'
+},
+
+"#AppearBox[platform=ios]" :{
+	
+	opacity:0.95,
+},
+
+".loc":
+{
+	font: {fontFamily: 'GillSans-Light', fontSize: "40dp"},
+	top:"3dp",
+	//right: "5dp",
+	color: "#535353",
+	text: "160"
+},
+
+"#closePopUp":
+{
+	font: {fontFamily: 'GillSans', fontWeight: "bold", fontSize: "18dp"},
+	backgroundImage: '/images/sendBtn.png',
+	backgroundLeftCap: "10dp",
+	color: "black",
+	//backgroundTopCap: "5dp",
+	height: "40dp",
+	//right: "5dp",
+	//left: "5dp",
+	bottom: "5dp"
+}
+
+"#StatusUpdateContainer":{
+	backgroundColor:'#0c0c0c',
+	///left:"5%",
+	//right:"10dp",
+	width: "240dp",
+	height:"65dp",
+	top:"10dp",
+	bottom:"10dp",
+	layout:'vertical',
+	borderRadius: "8dp",
+	borderColor: "#b4b4b3"
+},
+

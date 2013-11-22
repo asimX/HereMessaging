@@ -1,0 +1,17 @@
+<Alloy>
+    <View id="ptr" class="ptr">
+        <View id="prtCenter" class="ptrCenter">
+            <ImageView id="ptrArrow" class="ptrArrow" />
+            <ActivityIndicator id="ptrIndicator" class="ptrIndicator" />
+            <Label id="ptrText" class="ptrText" />
+        </View>
+    </View>    <!-- <View id="ptr" class="ptr">
+			<ImageView id="avatar"/>
+	        <View id="prtCenter" class="ptrCenter">
+	            <Label id="title"/>
+	            <Label id="ptrText" class="ptrText" />
+	            <Label id="location" class="ptrText" textAlign="Ti.UI.TEXT_ALIGNMENT_RIGHT" right="5" />
+	        </View>
+	        <ImageView id="ptrArrow" class="ptrArrow" />
+    </View> -->
+</Alloy>

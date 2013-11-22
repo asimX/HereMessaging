@@ -1,0 +1,111 @@
+"#statusUpdate":{
+	backgroundColor :'#202020',
+	//borderWidth :8,
+	//borderColor :'#999',
+	//backgroundImage: 
+	//height:300,
+	//width :200,
+	//borderRadius:5,
+	///opacity:0.95,
+		
+},
+"#statusUpdate[platform=android]":{
+	
+	 opacity: 1,
+     zIndex: 100,
+     layout:'vertical'
+},
+
+"#statusUpdate[platform=ios]" :{
+	
+	opacity:0.95,
+},
+
+"#upass":{
+	hintText: "password",
+	color: "#ebebeb",
+	top: "5dp",
+	//bottom: "5dp",
+	left: "5dp",
+	height:"45dp",
+	right: "70dp",
+	backgroundColor: "#a9a9a9",
+	borderRadius: "5dp",
+	focusable: true
+},
+
+"#c_pwdTxt":{
+	
+	hintText: "c_password",
+	color: "#ebebeb",
+	top: "51dp",
+	//bottom: "5dp",
+	left: "5dp",
+	height:"45dp",
+	right: "70dp",
+	backgroundColor: "#a9a9a9",
+	borderRadius: "5dp",
+	focusable: true
+	
+}
+
+"#alrt":{
+	font: {fontFamily: 'GillSans-Light', fontSize: "20dp"},
+	top:"3dp",
+	left: "5dp",
+	color:"#fff", //"#535353",
+	text: "please right your first name",
+},
+"#dlabel":{
+	font: {fontFamily: 'GillSans-Light', fontSize: "20dp"},
+	top:"75dp",
+	left: "5dp",
+	color:"#fff", //"#535353",
+	text: "to post in Here,press",
+	
+},
+
+"#cont":{
+	
+	font: {fontFamily: 'GillSans-Light', fontSize: "20dp"},
+	bottom:"10dp",
+	left: "100dp",
+	color:"#fff", //"#535353",
+	text: "Continue",
+	
+},
+
+"#StatusUpdateBtn":
+{
+	font: {fontFamily: 'GillSans', fontWeight: "bold", fontSize:"18dp"}
+},
+
+"#closePopUp":
+{
+	font: {fontFamily: 'GillSans', fontWeight: "bold", fontSize: "18dp"},
+	backgroundImage: '/images/sendBtn.png',
+	backgroundLeftCap: "10dp",
+	color: "black",
+	backgroundTopCap: "5dp",
+	//image:'/images/chatIcon.png',
+	height: "40dp",
+	//width:"40dp",
+	
+	//right: "5dp",
+	left: "5dp",
+	bottom: "5dp"
+},
+
+"#StatusUpdateContainer":{
+	backgroundColor:'#0c0c0c',
+	///left:"5%",
+	//right:"10dp",
+	width: "240dp",
+	height:"65dp",
+	top:"10dp",
+	bottom:"10dp",
+	layout:'vertical',
+	borderRadius: "8dp",
+	borderColor: "#b4b4b3"
+},
+

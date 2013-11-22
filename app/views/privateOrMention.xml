@@ -1,0 +1,13 @@
+<Alloy>
+	
+		<View class ="row" id="privateOrMention" height="100dp">
+			
+	         <View class ="PM" height="100dp">
+					   
+					     <ImageView id="mention" class ="tabButtonSelected"/>
+					     <ImageView id="privateIcon" />		
+	         </View>
+		</View>
+		
+</Alloy>
+      

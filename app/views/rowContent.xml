@@ -1,0 +1,7 @@
+<Alloy>
+	<View class="innerViewRowTwo" id="parentRow">
+		<View id="headerInnerRow" />
+		<View id="bodyInnerRow"/>
+		<View id="footerInnerRow"/>
+	</View>
+</Alloy>

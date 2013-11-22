@@ -1,0 +1,38 @@
+
+<Alloy>
+	
+		<View id="userProfile">
+		
+		<!-- <View class ="headerNavBar">
+				         	
+	         <ImageView id="headerImg"/>	
+	         <ImageView id="navBtn"   />	
+								         
+		</View> -->
+		
+			 <View id = "heading" class ="headerNavBar">	
+					 <ImageView id="logoImage"  image = "/images/logoGray.png" />	 
+			       
+		     </View> 
+				
+		   <ScrollView class ="scrollView" id="profileScroll" showVerticalScrollIndicator="true">
+			
+     
+            </ScrollView>
+
+            
+            <!--<View class ="tabGroup" id="footer">
+					
+				           <ImageView id="homeTab"      class ="tabButtonSelected" image ="/images/hereSelectedIcon.png"/>	 
+				           <ImageView id="mentionsTab"  class ="tabButton" image = "/images/mentionsIcon.png"/>
+				           <ImageView id="locationsTab" class ="tabButton" image = "/images/aroundIcon.png" />
+				           <ImageView id="settingTab"   class ="tabButton" image = "/images/profileSelectedIcon.png" />      	
+				                      
+				         
+		 </View>-->
+		    
+					
+		</View>
+		
+</Alloy>
+      

@@ -1,0 +1,42 @@
+<Alloy>
+	  
+			<View class="row" id="plusSignRow">
+					<View id="pSignRow" class="row">
+						
+							       <View class ="innerViewRowTwo" left = "0" width ="60" >
+							            <ImageView class="" id="spamBlock" image="/images/addIcon.png" width = "50" height ="50" />	
+							
+				                   </View>
+						
+						<View class ="innerViewRowTwo" left = "1" width ="65" >
+						
+						          <Label class="thin" top="5" >Location</Label>
+						          <Label id="loc" class="bold" bottom="5" color ="#ebebeb" >Around</Label>		
+						
+						</View>
+							
+							
+						<View class ="innerViewRowTwo" left="1" width ="65" >
+						         
+						         <Label class="thin" top="5"  >Appears</Label>
+						         <Label id="appears" class="bold" color ="#ebebeb" bottom="5">11:21</Label>		
+						
+						</View>
+							
+					    <View class ="innerViewRowTwo" left ="1" width ="127"   >
+								
+								<Label id="pname" class="bold" color ="#ebebeb" top="5"   left ="5" />
+								<Label class="thin" top="30" width ="70" left ="5">Mentions</Label>
+								<Label id="totol" class="bold" color ="#ebebeb" width ="30" bottom="5" left ="5">0</Label>	
+								<ImageView id="profileImg" class="profilePic" right ="5"/>	
+								
+						</View>
+					
+				
+		      </View> 
+		      
+			</View>
+	
+	
+	
+</Alloy>

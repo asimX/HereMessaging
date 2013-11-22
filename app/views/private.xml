@@ -1,0 +1,13 @@
+<Alloy>
+	
+		<View id="pvt">
+			<ScrollView id="sc" top="0"  class ="scrollView" showVerticalScrollIndicator="true" width="100%">
+
+
+						
+         	</ScrollView>
+				        		
+		</View>
+		
+</Alloy>
+      

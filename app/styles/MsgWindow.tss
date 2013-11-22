@@ -1,0 +1,78 @@
+"#statusUpdate":{
+	backgroundColor :'#202020',
+	//borderWidth :8,
+	//borderColor :'#999',
+	//backgroundImage: 
+	//height:300,
+	//width :200,
+	//borderRadius:5,
+	///opacity:0.95,
+		
+},
+
+"#statusUpdate[platform=android]":{
+	
+	 opacity: 1,
+     zIndex: 100,
+     layout:'vertical'
+},
+
+"#statusUpdate[platform=ios]" :{
+	
+	opacity:0.95,
+},
+
+"#statusMsg":
+{
+	hintText: "Mention",
+	color: "#ebebeb",
+	top: "5dp",
+	//bottom: "5dp",
+	left: "5dp",
+	height:"85dp",
+	right: "70dp",
+	backgroundColor: "#a9a9a9",
+	borderRadius: "5dp",
+	focusable: true
+},
+
+"#chars":
+{
+	font: {fontFamily: 'GillSans-Light', fontSize: "40dp"},
+	top:"3dp",
+	right: "5dp",
+	color: "#535353",
+	text: "162"
+},
+
+"#StatusUpdateBtn":
+{
+	font: {fontFamily: 'GillSans', fontWeight: "bold", fontSize:"18dp"}
+},
+
+"#closePopUp":
+{
+	font: {fontFamily: 'GillSans', fontWeight: "bold", fontSize: "18dp"},
+	backgroundImage: '/images/sendBtn.png',
+	backgroundLeftCap: "10dp",
+	color: "black",
+	//backgroundTopCap: "5dp",
+	height: "40dp",
+	right: "5dp",
+	left: "5dp",
+	bottom: "5dp"
+}
+
+"#StatusUpdateContainer":{
+	backgroundColor:'#0c0c0c',
+	///left:"5%",
+	//right:"10dp",
+	width: "240dp",
+	height:"65dp",
+	top:"10dp",
+	bottom:"10dp",
+	layout:'vertical',
+	borderRadius: "8dp",
+	borderColor: "#b4b4b3"
+},
+

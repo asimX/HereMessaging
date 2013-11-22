@@ -1,0 +1,21 @@
+<Alloy>
+	
+		<View id="mentions">
+			<!-- 
+	         <View class ="headerNavBar">
+					         	
+					     <ImageView id="mHeaderNav1" class ="tabButtonSelected"/>	
+					     <ImageView id="mHeaderNav2"/>	
+					         
+	         </View>
+	 -->
+			 <ScrollView id="scroller" top="0"  class ="scrollView" showVerticalScrollIndicator="true" width="100%">
+
+
+						
+         	</ScrollView>
+				
+		</View>
+		
+</Alloy>
+      

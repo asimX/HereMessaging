@@ -1,0 +1,5 @@
+<Alloy>
+	<Window id="LoginWindow">
+		<Require type="view" src="login/loginView" id="loginView"/>
+	</Window>
+</Alloy>

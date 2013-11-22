@@ -1,0 +1,21 @@
+<Alloy>
+
+ <View top="1" id="statusView" >
+					   
+				<View id="coverView" backgroundColor= "#ebebeb" left="0">
+					
+			        <ImageView id="dltStatus" class="deleteImage" left="2"/>
+					<ImageView class="profilePic" id="profileImg" left="25"/>
+					<Label id="nameLbl" top="0" />
+		        	<Label id = "updateTime" class ="bold" top ="0" color ="#797979"  right ="0" />
+				    <Label id = "statusLbl" class ="thin" top ="20" />
+				    <Label id ="tim" class ="bold" bottom ="0"  color ="#797979" right ="0">Time Squire</Label>
+				
+				</View>
+				
+				
+					
+		 </View>
+			
+	
+</Alloy>

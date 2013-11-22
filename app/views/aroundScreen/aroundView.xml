@@ -1,0 +1,32 @@
+<Alloy>
+	
+	
+							
+		 <View class="strip" id = "content" top="1dp">
+							
+							
+							 <View class="strip" id = "mRow" top="1dp">
+								 			
+									<View class ="innerRow"  left ="0" width="240dp"  >
+											
+											<Label id="around" class="bold"  top="5" / >
+											<ImageView class="cube"  id="cube1"  left ="5"/>
+											
+											<Label class="thin" id="duration" bottom ="0" left="80"  text="4h"  />
+											<Label class="thin" id="miles" bottom ="0"  right="5" />
+											
+																				
+									</View>
+									 							
+									<View id=""  class ="innerRow" left = "1" width = "78dp" >
+																	
+										  <Label class="thin" top="0"   text="Appear" />
+										  <Label id="appear" class="bold"  bottom="5"  />
+																		
+															
+								    </View>
+															
+						       </View>	
+								
+		</View>						
+</Alloy>

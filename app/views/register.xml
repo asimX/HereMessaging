@@ -1,0 +1,49 @@
+
+
+<Alloy>
+	
+	<Window id="registerWin"> 
+		
+	<View class="contentView" id="registerContentView">
+		
+	    <!--	<Label id="headingLbl" text="Access Your Account"/> -->
+	
+	    <View id="registerContainer">
+		
+				<TextField hintText="Email" color = "#ebebeb" id="registerUnameTxt" />
+				<View backgroundColor="#b4b4b3" height="1dp"/>
+				<TextField hintText="password" color = "#ebebeb" id="registerPwdTxt" />
+				<View backgroundColor="#b4b4b3" height="1dp"/>
+				<TextField hintText="conform_Pass" color = "#ebebeb" passwordMask="true" id="registerConformPwdTxt" />
+				<View backgroundColor="#b4b4b3" height="1dp"/>
+				<TextField hintText="firstName" color = "#ebebeb" id="registerFnameTxt" />
+				<View backgroundColor="#b4b4b3" height="1dp"/>
+				<TextField hintText="lastName" color = "#ebebeb" id="registerLnameTxt" />
+				<View backgroundColor="#b4b4b3" height="1dp"/>
+		</View>
+		
+		
+	<!--	<View layout="vertical" height="100dp" top="5dp" >
+			
+			
+	</View>-->
+			
+			 <Button title = "Submit" width = "75dp" top = "0dp"  id = "registerSubmitBtn"  />
+	</View> 
+	
+	
+	<View class ="middleView">
+													
+						<View class ="imgViewContainer">
+							
+								 <ImageView class ="logoImgView"/>
+																		     
+																		     
+								 </View>													
+												
+					    </View> 
+		
+	
+</Window> 
+	
+</Alloy>
