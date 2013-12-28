@@ -1,10 +1,11 @@
+// load libraries
 var APP = require('core');
 var ACS = require('acs');
-var Cloud = require('ti.cloud');
+//var Cloud = require('ti.cloud');
 
-var  hereWin = null;
-var deviceHeightScale = APP.deviceHeightScale;
-var deviceWidthScale = APP.deviceWidthScale;
+var hereWin = null;
+//var deviceHeightScale = APP.deviceHeightScale;
+//var deviceWidthScale = APP.deviceWidthScale;
 
 //var loginBtn = null;
 var pwdContainer = null;
@@ -47,7 +48,8 @@ $.loginHeader.height = APP.deviceHeight*.25;
 //$.loginFooter.height = APP.deviceHeight*.12;
 //$.loginPtr.height = APP.deviceHeight*.38;
 
-$.tfLine1.width = $.tfLine2.width = .8*APP.deviceWidth;
+//$.tfLine1.width = 
+$.tfLine1.width = .7*APP.deviceWidth;
 
 //Attach some simple on/off actions
 // $.checkBox.on = function() {
@@ -95,7 +97,7 @@ $.unameTxt.addEventListener('blur',function(e){
 		//loginBtn:$.loginBtn,
 		//loginTabGroup:$.loginTabGroup 
 	}, function(e){
-		pwdContainer = Alloy.createController("login/loginPwdContainer",{exists: e.exists,uname: $.unameTxt.value}).getView();
+		pwdContainer = Alloy.createController("login/elements/loginPwdContainer",{exists: e.exists,uname: $.unameTxt.value}).getView();
 		$.parentContainer.add(pwdContainer);
 		animation.fadeIn(pwdContainer,800);
 	});

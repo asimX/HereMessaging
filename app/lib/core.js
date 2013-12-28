@@ -5,6 +5,9 @@ var Cloud = require('ti.cloud');
  * App Singleton
  * @type {Object}
  */
+
+//keep record of all global variables in app here
+
 Alloy.Globals = {
 	/**
 	 * UI parameters
@@ -23,25 +26,40 @@ Alloy.Globals = {
 	        privateAlert:true,
 	},
 	
+	//DARK TRANSPARENCY OVERLAY FOR MODAL WINDOWS
+	// darkTransparentOverlay: Ti.UI.createView({
+			// height: Ti.UI.FILL,
+			// width: Ti.UI.FILL,
+			// backgroundColor: '#000',
+			// opacity: 0,
+			// zIndex: 20
+	// }),
+	
+	//ANIMATIONS FOR DARK OVERLAY
+	animOverlay: Ti.UI.createAnimation({
+				 	opacity: 0.5,
+					duration: 250
+	}),
+	
+	animHide: Ti.UI.createAnimation({
+		opacity: 0.0,
+		duration: 250
+	}),
+	
 	user: {
 		email: null,
 		uname: null,
 		id: null,
 		sessionID: null,
 		pwd: null,
-		checkin:{
-			id:null,
-			lat: null,
-			lng: null,
-			placeID: null,
-			placeName: "Around"
-		},
-		checkout: null,
+		posts: 0,
 		//placeID: null,
-		timeAppeared: null,
+		//timeAppeared: null,
 		pic: null,
 		//placeName: "Around"  // the default is "Around when user is not checked in"
 	},
+	
+	//menuWin.add(leftTableView);
 	/**
 	 * coordinates
 	 */
@@ -59,14 +77,15 @@ Alloy.Globals = {
 	
 	msgWindowOpen: false,
 	
-	//Settings: null,
+	menuBtn: null,
+	postBtn: null,
 	/**
-	 * Main Window of Application that holds all the tabviews
+	 * Main Content Window of Application that holds all the tabviews
 	 * @type {Object}
 	 */
-	MainWindow: null,
+	menuWindow: null,
 	/**
-	 * Modal Login Window that will not be part of the tabgroup
+	 * Modal Login Window that will not be part of the main menu
 	 * @type {Object}
 	 */
 	LoginWindow: null,
@@ -93,18 +112,23 @@ Alloy.Globals = {
 		this.user.uname = Ti.App.Properties.getString('uname');
 		this.user.id = Ti.App.Properties.getString('uid');
 		this.user.sessionID = Ti.App.Properties.getString('sessionID');
-		this.user.checkin.id = Ti.App.Properties.getString('checkInID');
-		this.user.checkin.placeID = Ti.App.Properties.getString('placeID');
-		this.user.timeAppeared = Ti.App.Properties.getString('timeAppeared');
-		this.user.checkin.placeName = Ti.App.Properties.getString('placeName');
+		//this.user.posts = Ti.App.Properties.getDouble('posts');
 		this.coordinates.lat = Ti.App.Properties.getDouble('latitude');
 		this.coordinates.lng = Ti.App.Properties.getDouble('longitude');
-		this.config.maxDistance = Ti.App.Properties.getDouble('maxDistance');
+		
 		// SET CLOUD SESSION ID - THIS IS NECESSARY TO DO THINGS LIKE CREATE AND UPDATE 
 		// AND GET THIS FROM PERSISTED STORAGE (APP PROPERTIES)
 		Cloud.sessionId = Ti.App.Properties.getString('sessionID');
-		this.osVersion = parseFloat(Ti.Platform.version);	
-	},
+		this.osVersion = parseFloat(Ti.Platform.version);
+		
+		// this.darkTransparentOverlay = Ti.UI.createView({
+			// height: Ti.UI.FILL,
+			// width: Ti.UI.FILL,
+			// backgroundColor: '#000',
+			// opacity: 0,
+			// zIndex: 20
+			// });
+		},
 	/**
 	 * Loads in the appropriate controller and config data
 	 */
@@ -135,6 +159,7 @@ Alloy.Globals = {
 	 */
 	resume: function() {
 		this.log('debug', 'APP.resume');
+		this.init();
 	},
 	/**
 	 * Pause event observer

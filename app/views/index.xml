@@ -1,5 +1,6 @@
 <Alloy>
 	<Window class="container" id="MainWindow">
-		<Widget src="com.AS.CustomTabs" id="tabController" bottom="0dp"/>
+		<!-- <Widget src="com.AS.CustomTabs" id="tabController" bottom="0dp"/> -->
+		<!-- <Module id="TiSideMenu" module="de.marcelpociot.sidemenu" method="createPaintView" platform="ios" > -->
 	</Window>
 </Alloy>

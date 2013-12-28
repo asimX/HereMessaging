@@ -1,0 +1,59 @@
+"#thisWin": {
+  	width: "95%",
+	backgroundColor: '#EBEBEB',
+	top: "20%",
+	layout: "vertical"
+}
+
+"#headerView":{
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: '#EBEBEB',
+	height: '20%',
+	layout: 'horizontal'
+}
+
+"#camBtnView":{
+	//left: 0,
+	width: "20%",
+	//backgroundColor: "yellow",
+	height: Ti.UI.FILL
+}
+
+"#camBtn":{
+	//backgroundImage: '/images/hereScreen/camBtn.png',
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	image: '/images/hereScreen/camBtn.png'
+}
+
+"#unameLbl":{
+	width:"60%",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"#countLblView":{
+	width:"20%"
+}
+"#countLbl":{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#1f1f1f",
+	text: '162'
+}
+
+"#lineView":{
+	width: Ti.UI.FILL,
+	height: "1dp",
+	backgroundColor: '#1f1f1f'
+}
+
+"#taPost":{
+	width: Ti.UI.FILL,
+	height: "79%",
+	paddingLeft: "10dp",
+	paddingRight: "10dp",
+	bottom: "5dp",
+	backgroundColor: 'transparent',
+	maxLength: 162,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}

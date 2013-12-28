@@ -1,11 +1,12 @@
 <Alloy>
 	<View id="parentContainer" layout="vertical">
 		<ImageView id="loginHeader"></ImageView>
-		<View backgroundColor="#272727" height="1dp" top="0dp"/>
 		
-		<View id="tfLine1" backgroundColor="#3e3e3e" height="1dp" top="15dp"/>
-		<TextField class="fields" hintText="Email" color="#535353" id="unameTxt" top="5dp" />
-		<View id="tfLine2" backgroundColor="#3e3e3e" height="1dp" top="5dp"/>
+		<!-- <View backgroundColor="#000000" height="1dp" top="0dp"/> -->
+		
+		<!-- <View id="tfLine1" backgroundColor="#3e3e3e" height="1dp" top="15dp"/> -->
+		<TextField class="fields" hintText="Email" id="unameTxt"  />
+		<View class="tfLine" id="tfLine1"/>
 		 		    
 		
 	</View>

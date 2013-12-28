@@ -1,0 +1,22 @@
+<Alloy>
+	<Window id="thisWin">
+		<View id="lblView">
+			<Label id="infoLbl" />
+		</View>
+		<View id="tfNameView">
+			<TextField id="tfName" />
+			<View id="tfLineView" />
+		</View>
+		<View id="postBottomView">
+			<View id="backBtnView">
+				<Button id="backBtn" />
+				<View id="backBtnLineView" />
+			</View>
+			<Label id="bottomLbl" />
+			<View id="nextBtnView">
+				<Button id="nextBtn" />
+				<View id="nextBtnLineView" />
+			</View>
+		</View>
+	</Window>
+</Alloy>

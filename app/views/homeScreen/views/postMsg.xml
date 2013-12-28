@@ -1,0 +1,15 @@
+<Alloy>
+	<Window id="thisWin">
+		<View id="headerView">
+			<View id="camBtnView">
+				<Button id="camBtn" />
+			</View>
+			<Label id="unameLbl" />
+			<View id="countLblView">
+				<Label id="countLbl" />
+			</View>
+		</View>
+		<View id="lineView" />
+		<TextArea id="taPost" />
+	</Window>
+</Alloy>

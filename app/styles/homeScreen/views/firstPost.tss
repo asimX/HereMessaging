@@ -1,0 +1,131 @@
+'#thisWin': {
+	//modal: true,
+	//navBarHidden: true,
+	width: "95%",
+	backgroundColor: '#EBEBEB',
+	top: "20%"
+}
+
+'#lblView':{
+	backgroundColor: '#EBEBEB',
+	top: 0,
+	width: Ti.UI.FILL,
+	height: '20%'
+}
+
+'#infoLbl':{
+	color: '#1f1f1f',
+	tintColor: '#1f1f1f',
+	text: 'This is your first time!! Create a username for your posts.',
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+"#tfNameView":{
+	top: '20%',
+	height: '40%',
+	backgroundColor: '#EBEBEB',
+	layout: "vertical",
+	//backgroundColor: 'yellow'
+}
+
+"#tfName":{
+	color: '#1f1f1f',
+	tintColor: "#1f1f1f",
+	top: '30%',
+	width: "60%",
+	height: "20dp",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	focusable: true
+}
+
+"#tfLineView":{
+	backgroundColor: '#1f1f1f',
+	top: '5dp',
+	width: "60%",
+	height: "1dp"
+}
+
+'#postBottomView':{
+	backgroundColor: '#EBEBEB',
+	layout: "horizontal",
+	height: '45%',
+	top: '65%',
+	//backgroundColor: 'blue'
+}
+
+'#backBtnView':{
+	layout: 'vertical',
+	width: '20%',
+	height: Ti.UI.FILL,
+	left: 0,
+	//backgroundColor: 'blue'
+}
+"#backBtn":{
+	height: Ti.UI.SIZE,
+	//width: Ti.UI.FILL,
+	title: 'Back',
+	font:{
+		fontFamily: 'GilSans-Light',
+		fontSize: '22dp'
+	},
+	color: '#1f1f1f',
+	tintColor: '#1f1f1f',
+	left: "10dp",
+	//right: "5dp"
+	// backgroundColor: 'yellow',
+	// style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN
+	
+}
+
+"#backBtnLineView":{
+	backgroundColor: '#1f1f1f',
+	width: Ti.UI.FILL,
+	height: '5dp',
+	top: 0,
+	left: "10dp",
+	//right: "5dp"
+}
+
+"#bottomLbl":{
+	left:0,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	text: "Posts are your footprints HERE",
+	color: '#1f1f1f',
+	width: "60%"
+}
+'#nextBtnView':{
+	layout: 'vertical',
+	width: '20%',
+	height: Ti.UI.FILL,
+	left: 0,
+	right: 0
+	//backgroundColor: 'blue'
+}
+
+"#nextBtn":{
+	height: Ti.UI.SIZE,
+	//width: Ti.UI.FILL,
+	title: 'Next',
+	font:{
+		fontFamily: 'GilSans-Light',
+		fontSize: '22dp'
+	},
+	color: '#1f1f1f',
+	tintColor: '#1f1f1f',
+	left: "5dp",
+	right: "10dp"
+	// backgroundColor: 'yellow',
+	// style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN
+	
+}
+
+"#nextBtnLineView":{
+	backgroundColor: '#1f1f1f',
+	width: Ti.UI.FILL,
+	height: '5dp',
+	top: 0,
+	left: "5dp",
+	right: "10dp"
+}

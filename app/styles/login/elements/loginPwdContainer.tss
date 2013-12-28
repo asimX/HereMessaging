@@ -1,0 +1,25 @@
+"#thisView":{
+	top: 0,
+	bottom: 0
+}
+
+"#viewContainer" : {
+  height: Ti.UI.SIZE,
+  backgroundColor: "#ffffff",
+  top: 0,
+  layout: 'vertical'
+},
+".fields":{
+	height: "30dp",
+	font: {fontFamily: 'GillSans-Light', fontSize: "27dp"},
+	returnKeyType: Titanium.UI.RETURNKEY_DONE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: '#535353'
+}
+
+"#loginFooter":{
+	width: Ti.UI.FILL,
+	backgroundColor: "#fff",
+	bottom: 0,
+	height: Ti.UI.SIZE
+}

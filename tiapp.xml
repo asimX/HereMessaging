@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-development" type="string">l7hKx5JSGuE63gHT9BEhwmqYx0sDA4S8</property>
+    <property name="acs-oauth-key-development" type="string">JzZ68YCQuxqYlzpbSuBVq4PH3H945EYk</property>
+    <property name="acs-api-key-development" type="string">ucN7uYUWsWDDGaih1IWgkXtzv8vRCTUN</property>
+    <property name="acs-oauth-secret-production" type="string">QHs7vCP6Tumpi9LmulIaOGu86zouZHel</property>
+    <property name="acs-oauth-key-production" type="string">0JAowZY4asbDQblVZjNmaFvwrCt2edC9</property>
+    <property name="acs-api-key-production" type="string">ugQrHLDt5WkaxIgPyA0p946YttJwhin2</property>
     <id>com.Here.Me</id>
     <name>HereMessaging</name>
     <version>1.0</version>
@@ -37,13 +43,16 @@
         </splash>
         <theme>default</theme>
     </mobileweb>
-    <modules/>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="iphone">de.marcelpociot.sidemenu</module>
+    </modules>
     <deployment-targets>
         <target device="android">true</target>
         <target device="blackberry">false</target>
-        <target device="ipad">true</target>
+        <target device="ipad">false</target>
         <target device="iphone">true</target>
-        <target device="mobileweb">true</target>
+        <target device="mobileweb">false</target>
         <target device="tizen">false</target>
     </deployment-targets>
     <sdk-version>3.1.3.GA</sdk-version>

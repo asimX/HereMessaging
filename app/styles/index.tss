@@ -1,31 +1,44 @@
 ".container": {
 	backgroundColor:"#202020"
 	///layout: "vertical"
-},
+}
 
 ".container[platform=android]":{
 	backgroundColor: "#202020",
 	navBarHidden: true
-},
+}
 
 "#middleView":{
 	bottom:"30%",
 	backgroundColor: "transparent",
 	height: "15%"
-},
+}
 "#imgViewContainer":{
 	// top: "10dp",
 	backgroundColor: "transparent",
 	///height:100,
 	width: 200,
 	borderRadius: "8dp"
-},
+}
 "Label": {
 	//width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	color: "#000",
 	top:10,
 	width:180
+}
+
+"#TiSlideMenu":{
+	backgroundImage: 'stars.png',
+	contentViewScaleValue: 0.2,
+	scaleContentView: true,
+	panGestureEnabled: true,
+	scaleBackgroundImageView: true,
+	parallaxEnabled: true,
+	// Blur options
+	blurBackground: true,
+	tintColor: '#ffffff',
+	blurRadius: 20
 }
 
 /*

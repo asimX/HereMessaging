@@ -1,9 +1,0 @@
-<Alloy>
-	<View id='viewContainer' class="container" opacity="0" layout="vertical">
-			<TextField class="fields" hintText="Your New Password ?" color="#3e3e3e" passwordMask="true" top="5dp" id="pwdTxt"/>
-			<View id="tfLine3" backgroundColor="#3e3e3e" height="1dp" top="5dp"/>
-			<ImageView id="loginPtr" image="/images/loginScreen/loginPtr.png" top="5dp" />
-			<View id = "loginFooter"/>	        
-		   	<!--  onClick ="registerUser" 	--> 
-	</View>
-</Alloy>

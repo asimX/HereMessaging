@@ -1,9 +1,5 @@
 "#LoginWindow": {
-	backgroundColor: "#202020",
-	opacity: 0.0
-},
-"#logoImgView":{
-	top: 250,
-	image: "/images/logoGray.png",
-	width:250
+	backgroundColor: "#ffffff",
+	opacity: 0.0,
+	navBarHidden: true
 }
