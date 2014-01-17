@@ -1,0 +1,90 @@
+"#rowContainer" : {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	backgroundColor: "transparent",
+	top: "0dp",
+	zIndex: 3,
+	// borderColor: "#000",
+	// borderWidth: 1	
+}
+
+"#avatarView" :{
+	backgroundImage: 'images/avatarView.png',
+	left: "10dp",
+	//zIndex: 3,
+	height: "32dp",
+	width: "32dp",
+	top: "10dp",
+	//bottom: '10dp'
+	borderRadius: "16dp",
+	//backgroundColor: 'yellow'
+}
+
+"#avatarImgView" :{
+	height:"32dp",
+	width: "32dp",
+	borderRadius: "16dp",
+	image: "/images/asim_profile2.png",
+	left: "10dp",
+	top: "5dp"
+}
+
+"#txtContainerView" :{
+	left: '10dp',
+	//right: '20dp',
+	//backgroundImage: '/images/left_speech_bubble.png',
+	height: Ti.UI.SIZE,
+	top: "10dp",
+	bottom: "10dp",
+	layout: 'absolute',
+	backgroundColor: "#fafafa",
+	right: "10dp",
+	//backgroundImage: "/images/msgBG.png"
+}
+
+"#nameLbl" :{
+	height: Ti.UI.SIZE,
+	top: "12dp",
+	left: "80dp",
+	font: {
+		fontSize: "12dp",
+		fontWeight: "bold"
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	text: "USERDISPLAYNAME"
+}
+
+"#timeLbl" : {
+	top: "10dp",
+	right: "15dp",
+	font: {
+		fontSize: "12dp",
+		//fontStyle: "bold"
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	text: "40m"
+}
+
+"#msgLblContainer" : {
+	top: "35dp",
+	//bottom: "10dp",
+	left: "80dp",
+	right: "10dp",
+	height: Ti.UI.SIZE
+}
+
+"#msgLbl" : {
+	top: "40dp",
+	height: Ti.UI.SIZE,
+	left: "10dp",
+	right: "15dp",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	//backgroundColor: "yellow",
+	wordWrap: true,
+	text: "this is some sample text bla bla bla bla",
+	font: {
+		fontSize: "12dp"
+	},
+	bottom: "10dp"
+}
+

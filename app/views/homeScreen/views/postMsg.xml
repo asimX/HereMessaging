@@ -11,5 +11,16 @@
 		</View>
 		<View id="lineView" />
 		<TextArea id="taPost" />
+	<View id="postBottomView">
+			<View id="backBtnView">
+				<Button id="backBtn" />
+				<View id="backBtnLineView" />
+			</View>
+			<Label id="bottomLbl" />
+			<View id="postBtnView">
+				<Button id="postBtn" />
+				<View id="postBtnLineView" />
+			</View>
+		</View>
 	</Window>
 </Alloy>

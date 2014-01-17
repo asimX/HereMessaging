@@ -4,7 +4,7 @@
 	//barColor:"#202020",
 	//backgroundColor:"#797979"
 	//layout: "vertical"
-},
+}
 
 "#navBtn" : {
 	//top:5,
@@ -12,7 +12,7 @@
 	image:"/images/hereScreen/post_button.png",
 	bottom: "5dp"
 	//backgroundColor: "yellow"
-   },
+   }
 
 "#headerImg" : {
 	//top:5,
@@ -20,40 +20,32 @@
 	image:"/images/hereScreen/navbar-herelogo.png"
 	//backgroundColor: "blue"
 	//width: Ti.UI.SIZE
-},
+}
 ".headerNavBar":{	
 	//top:"20dp",
     //height:"65dp",
     backgroundColor: "#202020"
     //backgroundImage:"/images/btn-settings@2x.png"
-},
+}
 "#homeTV":{
 	//height: "200dp"
 }
-   
- 
- 
-   
-/*
-"#helloBtn" : {
-	"top":5,
-    "width":250,
-    "height":30,
-   
-},
-"#callXhr" : {
-	"top":5,
-    "width":250,
-    "height":30
-},
 
-"#table":{
-     bottom:40,
-     "height":100,	
-	
-},
-*/
+"#postScrollView":{
+	height: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	verticalBounce: true,
+	scrollType: "vertical"
+}
 
+"#timeLineImg":{
+	height: Ti.UI.FILL,
+	width: "5dp",
+	image: "/images/blue_timeline.png",
+	left: "39dp",
+	bottom: 0,
+	zIndex: 1
+}
 
 
 

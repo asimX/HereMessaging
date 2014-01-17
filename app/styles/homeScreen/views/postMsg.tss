@@ -3,7 +3,7 @@
 	backgroundColor: '#EBEBEB',
 	top: "20%",
 	layout: "vertical"
-}
+},
 
 "#headerView":{
 	top: 0,
@@ -11,21 +11,21 @@
 	backgroundColor: '#EBEBEB',
 	height: '20%',
 	layout: 'horizontal'
-}
+},
 
 "#camBtnView":{
 	//left: 0,
 	width: "20%",
 	//backgroundColor: "yellow",
 	height: Ti.UI.FILL
-}
+},
 
 "#camBtn":{
 	//backgroundImage: '/images/hereScreen/camBtn.png',
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE,
 	image: '/images/hereScreen/camBtn.png'
-}
+},
 
 "#unameLbl":{
 	width:"60%",
@@ -49,11 +49,95 @@
 
 "#taPost":{
 	width: Ti.UI.FILL,
-	height: "79%",
+	height: "50%",
 	paddingLeft: "10dp",
 	paddingRight: "10dp",
 	bottom: "5dp",
 	backgroundColor: 'transparent',
 	maxLength: 162,
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+
+'#postBottomView':{
+	backgroundColor: '#EBEBEB',
+	layout: "horizontal",
+	height: '30%',
+	//top: '65%',
+	//backgroundColor: 'blue'
+}
+
+'#backBtnView':{
+	layout: 'vertical',
+	width: '20%',
+	height: Ti.UI.FILL,
+	left: 0,
+	//backgroundColor: 'blue'
+}
+"#backBtn":{
+	height: Ti.UI.SIZE,
+	//width: Ti.UI.FILL,
+	title: 'Back',
+	font:{
+		fontFamily: 'GilSans-Light',
+		fontSize: '22dp'
+	},
+	color: '#1f1f1f',
+	tintColor: '#1f1f1f',
+	left: "10dp",
+	//right: "5dp"
+	// backgroundColor: 'yellow',
+	// style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN
+	
+}
+
+"#backBtnLineView":{
+	backgroundColor: '#1f1f1f',
+	width: Ti.UI.FILL,
+	height: '5dp',
+	top: 0,
+	left: "10dp",
+	//right: "5dp"
+}
+
+"#bottomLbl":{
+	left:0,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	//text: "Posts are your footprints HERE",
+	color: '#1f1f1f',
+	width: "60%",
+	height: Ti.UI.FILL,
+}
+'#postBtnView':{
+	layout: 'vertical',
+	width: '20%',
+	height: Ti.UI.FILL,
+	left: 0,
+	right: 0
+	//backgroundColor: 'blue'
+}
+
+"#postBtn":{
+	height: Ti.UI.SIZE,
+	//width: Ti.UI.FILL,
+	title: 'Post',
+	font:{
+		fontFamily: 'GilSans-Light',
+		fontSize: '22dp'
+	},
+	color: '#1f1f1f',
+	tintColor: '#1f1f1f',
+	left: "5dp",
+	right: "10dp"
+	// backgroundColor: 'yellow',
+	// style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN
+	
+}
+
+"#postBtnLineView":{
+	backgroundColor: '#1f1f1f',
+	width: Ti.UI.FILL,
+	height: '5dp',
+	top: 0,
+	left: "5dp",
+	right: "10dp"
 }

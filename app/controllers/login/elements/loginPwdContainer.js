@@ -47,7 +47,7 @@ if(args.exists){
 		});
 	});
     
-    $.pwdTxt.hintText="Your Password ?";
+    $.pwdTxt.hintText="Password";
     
     //$.loginFooter.backgroundColor="#202020";
     //$.loginFooter.backgroundColor="blue";

@@ -16,6 +16,7 @@ Alloy.Globals = {
 	deviceHeightScale: Ti.Platform.displayCaps.platformHeight/480,
 	deviceWidth: Ti.Platform.displayCaps.platformWidth,
 	deviceHeight: Ti.Platform.displayCaps.platformHeight,
+	internalHeight: 0,
 	/**
 	 * user parameters
 	 */
@@ -37,7 +38,7 @@ Alloy.Globals = {
 	
 	//ANIMATIONS FOR DARK OVERLAY
 	animOverlay: Ti.UI.createAnimation({
-				 	opacity: 0.5,
+				 	opacity: 0.2,
 					duration: 250
 	}),
 	
@@ -45,6 +46,11 @@ Alloy.Globals = {
 		opacity: 0.0,
 		duration: 250
 	}),
+	
+	fadeIn:{
+		opacity: 1.0,
+		duration: 500
+	},
 	
 	user: {
 		email: null,
@@ -77,13 +83,18 @@ Alloy.Globals = {
 	
 	msgWindowOpen: false,
 	
-	menuBtn: null,
-	postBtn: null,
+	//menuBtn: null,
+	//postBtn: null,
 	/**
-	 * Main Content Window of Application that holds all the tabviews
+	 * Posts Window of Application
 	 * @type {Object}
 	 */
-	menuWindow: null,
+	PostsWindow: null,
+	/**
+	 * Window containing Main Menu
+	 * @type {Object}
+	 */
+	MenuWindow: null,
 	/**
 	 * Modal Login Window that will not be part of the main menu
 	 * @type {Object}
@@ -93,7 +104,7 @@ Alloy.Globals = {
 	 * Navigation Widget using for routing controllers
 	 * @type {Object}
 	 */
-	Tabs: null,
+	Navigation: null,
 	/**
 	 * Initialize the application
 	 * NOTE: This should only be fired in index controller file and only once.
@@ -109,8 +120,11 @@ Alloy.Globals = {
 		
 		//initializing user parameters
 		this.user.email = Ti.App.Properties.getString('email');
+		this.log('info', 'EMAIL:  '+this.user.email);
 		this.user.uname = Ti.App.Properties.getString('uname');
+		this.log('info', 'USERNAME:  '+this.user.uname);
 		this.user.id = Ti.App.Properties.getString('uid');
+		this.log('info', 'UID:  '+this.user.id);
 		this.user.sessionID = Ti.App.Properties.getString('sessionID');
 		//this.user.posts = Ti.App.Properties.getDouble('posts');
 		this.coordinates.lat = Ti.App.Properties.getDouble('latitude');
@@ -120,14 +134,7 @@ Alloy.Globals = {
 		// AND GET THIS FROM PERSISTED STORAGE (APP PROPERTIES)
 		Cloud.sessionId = Ti.App.Properties.getString('sessionID');
 		this.osVersion = parseFloat(Ti.Platform.version);
-		
-		// this.darkTransparentOverlay = Ti.UI.createView({
-			// height: Ti.UI.FILL,
-			// width: Ti.UI.FILL,
-			// backgroundColor: '#000',
-			// opacity: 0,
-			// zIndex: 20
-			// });
+		this.internalHeight = 0;
 		},
 	/**
 	 * Loads in the appropriate controller and config data
@@ -159,7 +166,6 @@ Alloy.Globals = {
 	 */
 	resume: function() {
 		this.log('debug', 'APP.resume');
-		this.init();
 	},
 	/**
 	 * Pause event observer

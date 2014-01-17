@@ -8,18 +8,18 @@
 	//borderRadius:5,
 	///opacity:0.95,
 		
-},
+}
 "#statusUpdate[platform=android]":{
 	
 	 opacity: 1,
      zIndex: 100,
      layout:'vertical'
-},
+}
 
 "#statusUpdate[platform=ios]" :{
 	
 	opacity:0.95,
-},
+}
 
 "#statusMsg":
 {
@@ -33,7 +33,7 @@
 	backgroundColor: "#a9a9a9",
 	borderRadius: "5dp",
 	focusable: true
-},
+}
 
 "#chars":
 {
@@ -42,12 +42,12 @@
 	right: "5dp",
 	color: "#535353",
 	text: "160"
-},
+}
 
 "#StatusUpdateBtn":
 {
 	font: {fontFamily: 'GillSans', fontWeight: "bold", fontSize:"18dp"}
-},
+}
 
 "#closePopUp":
 {
@@ -73,5 +73,4 @@
 	layout:'vertical',
 	borderRadius: "8dp",
 	borderColor: "#b4b4b3"
-},
-
+}

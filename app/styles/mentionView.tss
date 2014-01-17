@@ -1,12 +1,6 @@
-
-
 "#mentionTxt":{
-	width:210
-	
-	
-},
-
- 
+	width:210	
+}
 /*
 "#helloBtn" : {
 	"top":5,
@@ -26,10 +20,9 @@
 	
 },
 */
-
 "#mentionView":{
 	
 	top:1
 	
 	
-},
+}

@@ -1,0 +1,15 @@
+<Alloy>
+	<View id="rowContainer">
+		<!-- <View id="avatarView"> -->
+			
+		<!-- </View> -->
+		<View id="txtContainerView">
+			<ImageView id="avatarImgView" />
+			<Label id="nameLbl" />
+			<Label id="timeLbl" />
+			<!-- <View id="msgLblContainer"> -->
+				<Label id="msgLbl"></Label>
+			<!-- </View> -->
+		</View>
+	</View>
+</Alloy>

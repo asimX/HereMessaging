@@ -27,8 +27,23 @@ exports.init = function(e){
 		}
 };
 
-exports.refreshLocation = function(e){
-	
+exports.getCoords = function(callback){
+	Ti.Geolocation.getCurrentPosition(function(e){
+		if(e.error)
+		{
+			callback({
+				lat: APP.coordinates.lat,
+				lng: APP.coordinates.lng
+			});
+		}
+		else
+		{
+			callback({
+				lat: e.coords.latitude,
+				lng: e.coords.longitude
+			});
+		}
+	});
 };
 
 // exports.addLocationListener = function(){

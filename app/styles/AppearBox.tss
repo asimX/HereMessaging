@@ -41,7 +41,7 @@
 	//right: "5dp",
 	//left: "5dp",
 	bottom: "5dp"
-}
+},
 
 "#StatusUpdateContainer":{
 	backgroundColor:'#0c0c0c',
@@ -54,5 +54,5 @@
 	layout:'vertical',
 	borderRadius: "8dp",
 	borderColor: "#b4b4b3"
-},
+}
 
