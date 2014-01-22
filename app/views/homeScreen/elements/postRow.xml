@@ -1,5 +1,5 @@
 <Alloy>
-	<View id="rowContainer">
+	<TableViewRow id="rowContainer">
 		<!-- <View id="avatarView"> -->
 			
 		<!-- </View> -->
@@ -11,5 +11,5 @@
 				<Label id="msgLbl"></Label>
 			<!-- </View> -->
 		</View>
-	</View>
+	</TableViewRow>
 </Alloy>

@@ -42,13 +42,51 @@ $.thisWin.addEventListener("close", function(e){
 	args.postBtn.enabled=true;
 });
 
+var pic;
+
+$.camBtn.addEventListener("click", function(e){
+	Titanium.Media.showCamera({
+	success:function(event) {
+		// called when media returned from the camera
+		Ti.API.debug('Our type was: '+event.mediaType);
+		if(event.mediaType == Ti.Media.MEDIA_TYPE_PHOTO) {
+			pic = event.media;
+			var imageView = Ti.UI.createImageView({
+				width:"50%",
+				height:Ti.UI.FILL,
+				image:event.media
+			});
+			$.postContainer.remove($.taPost);
+			$.postContainer.add(imageView);
+		} else {
+			alert("got the wrong type back ="+event.mediaType);
+		}
+	},
+	cancel:function() {
+		// called when user cancels taking a picture
+	},
+	error:function(error) {
+		// called when there's an error
+		var a = Titanium.UI.createAlertDialog({title:'Camera'});
+		if (error.code == Titanium.Media.NO_CAMERA) {
+			a.setMessage('Please run this test on device');
+		} else {
+			a.setMessage('Unexpected error: ' + error.code);
+		}
+		a.show();
+	},
+	saveToPhotoGallery:true,
+	allowEditing:true,
+	mediaTypes:[Ti.Media.MEDIA_TYPE_PHOTO]
+});
+});
 $.backBtn.addEventListener("click", function(e){
 	$.thisWin.animate(slideLeft, function(e){
 		args.view.animate(APP.animHide, function(e){
 			
+			$.thisWin.close();
 		});
 	});
-	//$.thisWin.close();
 });
 
 $.postBtn.addEventListener("click", function(e){
@@ -57,7 +95,8 @@ $.postBtn.addEventListener("click", function(e){
 		ACS.savePost({
 			content: $.taPost.value,
 			lat: e.lat,
-			lng: e.lng
+			lng: e.lng,
+			photo: pic
 		},function(e){
 			$.thisWin.animate(slideLeft, function(e){
 				

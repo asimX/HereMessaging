@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="contentWin">
+		<Widget src="nl.fokkezb.loading" id="loading" />
+		<ImageView id="bgImageView" />
+		<TableView id="postsTV">
+			<Widget id="ptr" src="nl.fokkezb.pullToRefresh" onRelease="refreshPosts" />
+		</TableView>
+		<View id="transparentView" />
+	</Window>
+</Alloy>

@@ -1,3 +1,7 @@
+**NOTE:** As from Titanium 3.2.0, the native *UIRefreshControl* will be supported for iOS. The Android version of this widget may still be of use to you but personally I think a refresh button is more user-friendly then this implementation. Therefor I will not actively maintain this module any further.
+
+---------------------
+
 # Alloy *Pull to Refresh* Widget
 
 ## Overview
@@ -7,6 +11,8 @@ Also take a look at my [Infinite Scroll](https://github.com/FokkeZB/nl.fokkezb.i
 
 ## Overview
 The widgets adds a *HeaderPullView* to a *TableView* that is shown when the users drags the view down when it is already scrolled to the top. An event is triggered so that the implementing controller can reload data.
+
+![Extend edges](https://raw.github.com/FokkeZB/nl.fokkezb.pullToRefresh/master/docs/extend.png)
 
 ![Pull](https://raw.github.com/FokkeZB/nl.fokkezb.pullToRefresh/master/docs/pull.png)
 
@@ -24,13 +30,16 @@ The widgets adds a *HeaderPullView* to a *TableView* that is shown when the user
 * Support for *ListView*s.
 
 ## Quick Start
-* Download the latest [release](https://github.com/FokkeZB/nl.fokkezb.pullToRefresh/releases).
-* Unzip the file to `app/widgets/nl.fokkezb.pullToRefresh`.
-* Add the widget as a dependency to your `app/config.json` file:
+
+* Use `gittio install nl.fokkezb.pullToRefresh` to install via [gitTio](http://gitt.io/cli) or:
+    
+  * Download the latest [release](https://github.com/FokkeZB/nl.fokkezb.pullToRefresh/releases).
+  * Unzip the file to `app/widgets/nl.fokkezb.pullToRefresh`.
+  * Add the widget as a dependency to your `app/config.json` file:
 	
 	```javascript
 		"dependencies": {
-			"nl.fokkezb.pullToRefresh":"1.4"
+			"nl.fokkezb.pullToRefresh":"1.5.2"
 		}
 	```
 
@@ -39,11 +48,17 @@ The widgets adds a *HeaderPullView* to a *TableView* that is shown when the user
 	```xml
 	<Alloy>
 	  <Collection src="myCollection" />
-	  <TableView dataCollection="myCollection">
+	  <TableView id="table" dataCollection="myCollection">
 	    <Widget id="ptr" src="nl.fokkezb.pullToRefresh" onRelease="myLoader" />
 	    <TableViewRow title="{myColumn}" />
 	  </TableView>
 	</Alloy>
+	```
+
+* Only in Alloy 1.3.0 (shoud be fixed in 1.3.1) you have to manually bind the table from the controller:
+
+	```
+	$.ptr.init($.table);
 	```
 	
 * In the callback set via `myLoader` make sure you call `e.hide()` to hide the *headerPullView* when it is done loading. For example: 
@@ -67,6 +82,7 @@ The widget can be fully styled without touching the widget source. Use the follo
 | `#ptrArrow` | The arrow image. Use `WPATH('/images/white.png')` to use the white instead of the default grey image, or roll your own. |
 | `#ptrIndicator` | The *ActivityIndicator* showing during load |
 | `#ptrText` | The text |
+| `#ptrLine` | The line separating the widget and the table |
 
 ## Internationalization
 The widget texts can be overridden and translated via your `strings.xml` file, using the following names:
@@ -78,27 +94,38 @@ The widget texts can be overridden and translated via your `strings.xml` file, u
 | msgUpdating | Updating... |
 
 ## Options
-There are no required options to pass via TSS properties or XML attributes, apart from the `onRelase` attribute to bind your callback to the release-event.
+There are no required options to pass via TSS properties or XML attributes, apart from the `onRelease` attribute to bind your callback to the release-event.
 
 | Parameter | Type | Default |
 | --------- | ---- | ----------- |
 | msgPull | `string` | Overrides `Pull to refresh...` |
 | msgRelease | `string`  | Overrides `Release to refresh...` |
 | msgUpdating | `string` | Overrides `Updating...` |
+| top **(iOS)**| `number` | If the top of the table is covered by another view - e.g. when using `Ti.UI.Window.extendEges` - set this to the height of that view (`64` for both status and navigation bar) |
 
 ## Methods
 You can also manually show and hide the view or trigger the complete cycle of the widget. You could use this for the first load when your window opens.
 
-| Function   | Parameters | Usage
-| ---------- | ---------- |
-| setOptions | `object`   | Set any of the options
-| refresh    |            | Manually trigger pull + release 
-| show       |            | Show the *headerPullView*
-| hide       |            | Hide the *headerPullView*
-| dettach    |            | Remove the *headerPullView*
-| attach     |            | Re-add the *headerPullView* after removal
+| Function   | Parameters | Usage |
+| ---------- | ---------- | ----- |
+| setOptions | `object`   | Set any of the options |
+| refresh    |            | Manually trigger pull + release |
+| show       |            | Show the *headerPullView* |
+| hide       |            | Hide the *headerPullView* |
+| dettach    |            | Remove the *headerPullView* |
+| attach     |            | Re-add the *headerPullView* after removal |
+| init       | `Ti.UI.TableView` | Manually init the widget if it's the child element of the table, or to work around [TC-3417](https://jira.appcelerator.org/browse/TC-3417) in Alloy 1.3.0-cr.
 
 ## Changelog
+* 1.5.2
+  * Instructions for Alloy 1.3.0 and giTio
+* 1.5.1
+  * Workaround for regression in Alloy 1.3.0-cr
+  * Closes #17 by checking source of events
+* 1.5
+  * New `top` option for compatibility with `Ti.UI.Window.extendEdges` on iOS7
+  * Arrow now properly hidden on Android, using opacity
+  * Default style updated to match Twitter on iOS7
 * 1.4
   * Now compatible with Android and other OS!
 * 1.3
@@ -130,9 +157,6 @@ You may obtain a copy of the License at
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-</pre>WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 </pre>

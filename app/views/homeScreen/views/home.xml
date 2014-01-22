@@ -18,9 +18,6 @@
 	</View> -->
 	<Window id="MainWindow">
 		<Widget src="nl.fokkezb.loading" id="loading" />
-		<!-- <ScrollView id="postScrollView">
-			<ImageView id="timeLineImg" />
-		</ScrollView> -->
 	</Window>
 </Alloy>
       

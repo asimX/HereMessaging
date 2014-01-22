@@ -1,0 +1,33 @@
+"#contentWin" : {
+	backgroundColor: "#808080",//"#eaeaea",
+	titleImage: "/images/hereScreen/Logo_dark_BK.png",
+	barColor: "#16ffffff",//eaeaea",
+	translucent: true,
+	extendEdges: [Ti.UI.EXTEND_EDGE_TOP],
+	statusBarStyle: Ti.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	autoAdjustScrollViewInsets: true
+}
+
+"#postsTV" :{
+	top: 0,
+	backgroundColor: "transparent",
+	separatorColor: "transparent"
+}
+
+"#bgImageView" :{
+	backgroundImage: "/images/blueWP.png",
+	opacity:0.6,
+	height:Ti.UI.FILL,
+	width:Ti.UI.FILL
+}
+
+"#transparentView" : {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: '#000',
+	opacity: 0
+}
+
+"#ptr" :{
+	top: 64
+}

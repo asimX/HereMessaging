@@ -47,6 +47,14 @@
 	zIndex: 1
 }
 
+"#postsTV" :{
+	top: 0,
+		backgroundColor: "transparent",
+		separatorColor: "transparent"
+}
+
+
+
 
 
 

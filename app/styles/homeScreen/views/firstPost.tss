@@ -2,7 +2,7 @@
 	//modal: true,
 	//navBarHidden: true,
 	width: "95%",
-	backgroundColor: '#EBEBEB',
+	backgroundColor: '#ffffff',//'#EBEBEB',
 	top: "20%",
 	opacity: 0.0
 	//zIndex: 10,
@@ -10,7 +10,7 @@
 }
 
 '#lblView':{
-	backgroundColor: '#EBEBEB',
+	backgroundColor: '#ffffff',//'#EBEBEB',
 	top: 5,
 	width: Ti.UI.FILL,
 	height: '20%'
@@ -28,7 +28,7 @@
 "#tfNameView":{
 	top: '20%',
 	height: '40%',
-	backgroundColor: '#EBEBEB',
+	backgroundColor: '#ffffff', //'#EBEBEB',
 	layout: "vertical",
 	//backgroundColor: 'yellow'
 }
@@ -51,7 +51,7 @@
 }
 
 '#postBottomView':{
-	backgroundColor: '#EBEBEB',
+	backgroundColor: '#ffffff', //'#EBEBEB',
 	layout: "horizontal",
 	height: '45%',
 	top: '65%',

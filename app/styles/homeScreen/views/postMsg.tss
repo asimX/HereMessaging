@@ -1,6 +1,6 @@
 "#thisWin": {
   	width: "95%",
-	backgroundColor: '#EBEBEB',
+	backgroundColor: '#ffffff',//'#EBEBEB',
 	top: "20%",
 	layout: "vertical"
 },
@@ -8,7 +8,7 @@
 "#headerView":{
 	top: 0,
 	width: Ti.UI.FILL,
-	backgroundColor: '#EBEBEB',
+	backgroundColor: '#ffffff',//'#EBEBEB',
 	height: '20%',
 	layout: 'horizontal'
 },
@@ -47,9 +47,15 @@
 	backgroundColor: '#1f1f1f'
 }
 
-"#taPost":{
+'#postContainer' :{
 	width: Ti.UI.FILL,
 	height: "50%",
+	backgroundColor: "transparent"
+}
+
+"#taPost":{
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,//"50%",
 	paddingLeft: "10dp",
 	paddingRight: "10dp",
 	bottom: "5dp",
@@ -59,7 +65,7 @@
 }
 
 '#postBottomView':{
-	backgroundColor: '#EBEBEB',
+	backgroundColor: '#ffffff',//'#EBEBEB',
 	layout: "horizontal",
 	height: '30%',
 	//top: '65%',
@@ -81,8 +87,8 @@
 		fontFamily: 'GilSans-Light',
 		fontSize: '22dp'
 	},
-	color: '#1f1f1f',
-	tintColor: '#1f1f1f',
+	color: '#0096ff',
+	tintColor: '#0096ff',
 	left: "10dp",
 	//right: "5dp"
 	// backgroundColor: 'yellow',
@@ -124,8 +130,8 @@
 		fontFamily: 'GilSans-Light',
 		fontSize: '22dp'
 	},
-	color: '#1f1f1f',
-	tintColor: '#1f1f1f',
+	color: '#0096ff',
+	tintColor: '#0096ff',
 	left: "5dp",
 	right: "10dp"
 	// backgroundColor: 'yellow',

@@ -33,7 +33,7 @@ function login(params, callback){
 	        Ti.API.info('session id:  '+e.meta.session_id);
 	       	APP.user.email = user.email;
 	       	Ti.App.Properties.setString('email', user.email);
-	       	APP.user.uname = user.displayName;
+	       	//APP.user.uname = user.displayName;
 			if(callback){
 				callback(APP.user.id);
 			}
@@ -195,7 +195,7 @@ exports.logout = function(callback){
         	}
         	
     	} else {
-        	alert('Error:\n' +
+        	alert('Error:/n' +
             ((e.error && e.message) || JSON.stringify(e)));
     	}
 	});
@@ -362,20 +362,55 @@ exports.getPosts = function(_lon,_lat, pagenum, callback){
 	});
 };
 
+exports.getPostPhoto = function(param, callback){
+	Cloud.Photos.query({
+		where:{
+			id: param.id
+		}
+	}, function(e){
+		if(e.success){
+			callback({photo: e.photos[0].urls.medium_500});
+		}
+		else{
+			alert('Error:/n' +
+            ((e.error && e.message) || JSON.stringify(e)));
+		}
+	});
+};
 exports.savePost = function(param, callback){
 	LOCATION.getCoords(function(e){
-		Cloud.Posts.create({
-			content: param.content,
-			//title: param.title,
-			//type:param.type,
-			custom_fields: {
-				coordinates: [param.lng,param.lat]
-			}	
-		//coordinates: [param.lng,param.lat]
-		}, function(e){
-			alert('Post Saved. PostID is: '+e.posts[0].id);
-			callback();
-		});
+		if(param.photo)	{
+			Cloud.Posts.create({
+				content: "pic",
+				//title: param.title,
+				//type:param.type,
+				photo: param.photo,
+				custom_fields: {
+					coordinates: [param.lng,param.lat]
+				}	
+			//coordinates: [param.lng,param.lat]
+			}, function(e){
+				alert(JSON.stringify(e));
+				//alert('Post Saved. PostID is: '+e.posts[0].id);
+				callback();
+			});
+		}
+		else{
+			Cloud.Posts.create({
+				content: param.content,
+				//title: param.title,
+				//type:param.type,
+				//photo: param.photo,
+				custom_fields: {
+					coordinates: [param.lng,param.lat]
+				}	
+			//coordinates: [param.lng,param.lat]
+			}, function(e){
+				alert("TEXT:  \n"+JSON.stringify(e));
+				alert('Post Saved. PostID is: '+e.posts[0].id);
+				callback();
+			});
+		}
 	});
 };
 //0.00075776711
