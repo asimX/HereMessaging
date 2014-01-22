@@ -369,6 +369,7 @@ exports.getPostPhoto = function(param, callback){
 		}
 	}, function(e){
 		if(e.success){
+			Ti.API.info("getPostPhoto returns:  \n"+JSON.stringify(e));
 			callback({photo: e.photos[0].urls.medium_500});
 		}
 		else{

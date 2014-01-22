@@ -22,9 +22,7 @@ Alloy.Globals = {
 	 */
 	alerts:{
 		
-	        locationAlert:true,
-	        mentionAlert:true,
-	        privateAlert:true,
+	        locationAlert:true
 	},
 	
 	//DARK TRANSPARENCY OVERLAY FOR MODAL WINDOWS

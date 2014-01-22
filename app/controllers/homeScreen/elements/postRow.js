@@ -22,10 +22,12 @@ $.timeLbl.text = timeFromNow;
 $.nameLbl.text = args.displayName;
 
 if(args.pic){
+	
 	ACS.getPostPhoto({
-		where:{
-			id: args.pic.id
-		}
+		id: args.pic.id
+		// where:{
+			// filename: args.pic.id
+		// }
 	}, function(e){
 		var imgView = Ti.UI.createImageView({
 			image: e.photo,

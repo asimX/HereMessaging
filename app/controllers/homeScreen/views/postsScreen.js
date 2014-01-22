@@ -68,7 +68,6 @@ function refreshPosts(f){
 		// });
 		ACS.getPosts(APP.coordinates.lng, APP.coordinates.lat, pageNum, function(e){
 			totalPages = e.totalPages;
-			Ti.API.info("get posts returns:  " + JSON.stringify(e));
 			for(var i=0; i<e.posts.length; i++){
 				// if(e.posts[i].photo){
 					// ACS.getPostPhoto({id:e.posts[i].photo.id}, function(f){
